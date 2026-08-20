@@ -2,53 +2,79 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="description"
         content="Habib Shahriar Ridoy — GoHighLevel & Automation Expert. Funnels, lead nurture, AI agents, email marketing and integrations.">
 
     <meta name="author" content="Habib Shahriar Ridoy">
+
     <meta name="theme-color" content="#080b12">
 
     <title>Habib Shahriar Ridoy | GHL & Automation Expert</title>
 
+
     <!-- Google Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
         rel="stylesheet">
 
+
     <!-- Main CSS -->
-    <link rel="stylesheet" href="styles.css?v=3">
+
+    <link rel="stylesheet" href="styles.css?v=10">
 
 
     <!-- =====================================================
-         HERO FLOATING CARDS FINAL POSITION FIX
+         HERO FLOATING CARD POSITION FIX
          ===================================================== -->
 
     <style>
 
-        /* Main visual area */
+
+        /* =====================================================
+           HERO VISUAL
+           ===================================================== */
+
         .visual {
             position: relative !important;
             overflow: visible !important;
         }
 
 
-        /* Profile */
+        /* =====================================================
+           PROFILE
+           ===================================================== */
+
         .visual .profile {
             position: relative !important;
             z-index: 10 !important;
         }
 
 
-        /* Photo */
         .visual .photo {
             position: relative !important;
             overflow: visible !important;
+        }
+
+
+        /* =====================================================
+           PROFILE IMAGE
+           ===================================================== */
+
+        .visual .photo img {
+            position: relative !important;
+            z-index: 2 !important;
         }
 
 
@@ -57,6 +83,7 @@
            ===================================================== */
 
         .visual .available {
+
             position: absolute !important;
 
             top: 18px !important;
@@ -70,6 +97,7 @@
             white-space: nowrap !important;
 
             transform: none !important;
+
         }
 
 
@@ -78,6 +106,7 @@
            ===================================================== */
 
         .visual .float {
+
             position: absolute !important;
 
             z-index: 500 !important;
@@ -85,15 +114,17 @@
             width: max-content !important;
 
             pointer-events: none !important;
+
         }
 
 
         /* =====================================================
            GOHIGHLEVEL
-           LEFT SIDE
+           LEFT / UPPER SIDE
            ===================================================== */
 
         .visual .f1 {
+
             top: 90px !important;
 
             left: -70px !important;
@@ -102,6 +133,7 @@
             bottom: auto !important;
 
             transform: rotate(-3deg) !important;
+
         }
 
 
@@ -111,6 +143,7 @@
            ===================================================== */
 
         .visual .f2 {
+
             top: 240px !important;
 
             right: -90px !important;
@@ -119,34 +152,43 @@
             bottom: auto !important;
 
             transform: rotate(3deg) !important;
+
         }
 
 
         /* =====================================================
            API + WEBHOOKS
-           BOTTOM LEFT
+           
+           IMPORTANT:
+           Moved UP so it does NOT overlap
+           Habib Shahriar Ridoy name.
            ===================================================== */
 
         .visual .f3 {
+
             top: auto !important;
 
             left: -60px !important;
 
             right: auto !important;
-            bottom: 35px !important;
+
+            bottom: 145px !important;
 
             transform: rotate(-2deg) !important;
+
         }
 
 
         /* =====================================================
-           PROFILE INFORMATION
+           PROFILE INFO
            ===================================================== */
 
         .visual .profile-info {
+
             position: relative !important;
 
             z-index: 100 !important;
+
         }
 
 
@@ -156,16 +198,31 @@
 
         @media (max-width: 1100px) {
 
+
             .visual .f1 {
+
                 left: -20px !important;
+
+                top: 90px !important;
+
             }
+
 
             .visual .f2 {
+
                 right: -30px !important;
+
+                top: 260px !important;
+
             }
 
+
             .visual .f3 {
+
                 left: -20px !important;
+
+                bottom: 125px !important;
+
             }
 
         }
@@ -177,20 +234,26 @@
 
         @media (max-width: 760px) {
 
+
             .visual .available {
 
                 top: 12px !important;
+
                 right: 12px !important;
 
                 font-size: 10px !important;
 
                 padding: 8px 12px !important;
+
             }
 
+
+            /* GHL */
 
             .visual .f1 {
 
                 top: 80px !important;
+
                 left: -15px !important;
 
                 transform:
@@ -198,12 +261,16 @@
                     rotate(-3deg) !important;
 
                 transform-origin: left center !important;
+
             }
 
+
+            /* AI */
 
             .visual .f2 {
 
                 top: 220px !important;
+
                 right: -15px !important;
 
                 transform:
@@ -211,19 +278,24 @@
                     rotate(3deg) !important;
 
                 transform-origin: right center !important;
+
             }
 
+
+            /* API + WEBHOOKS */
 
             .visual .f3 {
 
                 left: -10px !important;
-                bottom: 40px !important;
+
+                bottom: 105px !important;
 
                 transform:
                     scale(.75)
                     rotate(-2deg) !important;
 
                 transform-origin: left center !important;
+
             }
 
         }
@@ -235,33 +307,49 @@
 
         @media (max-width: 480px) {
 
+
+            /* GHL */
+
             .visual .f1 {
 
                 left: -5px !important;
 
+                top: 55px !important;
+
                 transform:
                     scale(.62)
                     rotate(-3deg) !important;
+
             }
 
+
+            /* AI */
 
             .visual .f2 {
 
                 right: -5px !important;
 
+                top: 200px !important;
+
                 transform:
                     scale(.62)
                     rotate(3deg) !important;
+
             }
 
+
+            /* API + WEBHOOKS */
 
             .visual .f3 {
 
                 left: -5px !important;
 
+                bottom: 85px !important;
+
                 transform:
                     scale(.62)
                     rotate(-2deg) !important;
+
             }
 
         }
@@ -273,7 +361,11 @@
 
 <body>
 
-    <!-- Progress Bar -->
+
+    <!-- =====================================================
+         PROGRESS
+         ===================================================== -->
+
     <div id="progress"></div>
 
 
@@ -285,28 +377,55 @@
 
         <nav class="nav wrap">
 
+
             <a class="brand" href="#home">
+
                 <b>HR</b>
-                <span>Habib Ridoy</span>
+
+                <span>
+                    Habib Ridoy
+                </span>
+
             </a>
 
-            <button id="menu">☰</button>
+
+            <button id="menu">
+                ☰
+            </button>
+
 
             <div id="links">
 
-                <a href="#about">About</a>
 
-                <a href="#services">Services</a>
+                <a href="#about">
+                    About
+                </a>
 
-                <a href="#stack">Stack</a>
 
-                <a href="#projects">Projects</a>
+                <a href="#services">
+                    Services
+                </a>
 
-                <a href="#process">Process</a>
+
+                <a href="#stack">
+                    Stack
+                </a>
+
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+
+                <a href="#process">
+                    Process
+                </a>
+
 
                 <a class="pill" href="#contact">
                     Let's Talk ↗
                 </a>
+
 
             </div>
 
@@ -314,6 +433,10 @@
 
     </header>
 
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
 
     <main>
 
@@ -324,16 +447,21 @@
 
         <section class="hero" id="home">
 
+
             <div class="glow g1"></div>
+
             <div class="glow g2"></div>
 
 
             <div class="wrap hero-grid">
 
 
-                <!-- HERO LEFT -->
+                <!-- =================================================
+                     HERO TEXT
+                     ================================================= -->
 
                 <div class="hero-copy reveal">
+
 
                     <div class="eyebrow">
 
@@ -365,46 +493,91 @@
                             Habib Shahriar Ridoy
                         </strong>,
 
-                        a GoHighLevel & Automation Expert specializing in CRM workflows,
-                        funnels, lead nurture, AI agents, email marketing and powerful integrations.
+                        a GoHighLevel & Automation Expert specializing in
+                        CRM workflows, funnels, lead nurture, AI agents,
+                        email marketing and powerful integrations.
 
                     </p>
 
 
                     <div class="actions">
 
-                        <a class="btn primary" href="#projects">
+
+                        <a
+                            class="btn primary"
+                            href="#projects">
+
                             Explore My Work ↗
+
                         </a>
 
-                        <a class="btn" href="#contact">
+
+                        <a
+                            class="btn"
+                            href="#contact">
+
                             Start a Project
+
                         </a>
+
 
                     </div>
 
 
                     <div class="proof">
 
-                        <div>
-                            <b>GHL</b>
-                            <small>Automation</small>
-                        </div>
 
                         <div>
-                            <b>AI</b>
-                            <small>Voice & Chat</small>
+
+                            <b>
+                                GHL
+                            </b>
+
+                            <small>
+                                Automation
+                            </small>
+
                         </div>
 
-                        <div>
-                            <b>CRM</b>
-                            <small>Lead Nurture</small>
-                        </div>
 
                         <div>
-                            <b>API</b>
-                            <small>Integrations</small>
+
+                            <b>
+                                AI
+                            </b>
+
+                            <small>
+                                Voice & Chat
+                            </small>
+
                         </div>
+
+
+                        <div>
+
+                            <b>
+                                CRM
+                            </b>
+
+                            <small>
+                                Lead Nurture
+                            </small>
+
+                        </div>
+
+
+                        <div>
+
+                            <b>
+                                API
+                            </b>
+
+                            <small>
+                                Integrations
+                            </small>
+
+                        </div>
+
 
                     </div>
 
@@ -412,53 +585,63 @@
 
 
                 <!-- =================================================
-                     HERO RIGHT / PROFILE
+                     HERO VISUAL
                      ================================================= -->
 
                 <div class="visual reveal">
 
 
                     <div class="orbit a"></div>
+
                     <div class="orbit b"></div>
 
 
-                    <!-- PROFILE -->
+                    <!-- =================================================
+                         PROFILE
+                         ================================================= -->
 
                     <div class="profile">
 
 
-                        <!-- PHOTO -->
+                        <!-- PROFILE PHOTO -->
 
                         <div class="photo">
 
+
                             <img
                                 src="assets/profile.jpg"
-                                alt="Habib Shahriar Ridoy"
-                            >
+                                alt="Habib Shahriar Ridoy">
 
 
                             <!-- OPEN TO WORK -->
 
                             <span class="available">
+
                                 ● Open to work
+
                             </span>
+
 
                         </div>
 
 
-                        <!-- PROFILE INFO -->
+                        <!-- PROFILE INFORMATION -->
 
                         <div class="profile-info">
 
+
                             <div>
+
 
                                 <h2>
                                     Habib Shahriar Ridoy
                                 </h2>
 
+
                                 <p>
                                     GoHighLevel & Automation Expert
                                 </p>
+
 
                             </div>
 
@@ -467,84 +650,102 @@
                                 ↗
                             </a>
 
+
                         </div>
+
 
                     </div>
 
 
                     <!-- =================================================
-                         FLOATING CARD 1
-                         GOHIGHLEVEL
+                         FLOATING CARD — GOHIGHLEVEL
                          ================================================= -->
 
                     <div class="float f1">
 
+
                         ⚙
 
+
                         <span>
+
 
                             <b>
                                 GoHighLevel
                             </b>
 
+
                             <small>
                                 Workflows & CRM
                             </small>
 
+
                         </span>
+
 
                     </div>
 
 
                     <!-- =================================================
-                         FLOATING CARD 2
-                         AI AUTOMATION
+                         FLOATING CARD — AI AUTOMATION
                          ================================================= -->
 
                     <div class="float f2">
 
+
                         ✦
 
+
                         <span>
+
 
                             <b>
                                 AI Automation
                             </b>
 
+
                             <small>
                                 Voice + Chat Agents
                             </small>
 
+
                         </span>
+
 
                     </div>
 
 
                     <!-- =================================================
-                         FLOATING CARD 3
-                         API + WEBHOOKS
+                         FLOATING CARD — API + WEBHOOKS
                          ================================================= -->
 
                     <div class="float f3">
 
+
                         ⌁
 
+
                         <span>
+
 
                             <b>
                                 API + Webhooks
                             </b>
 
+
                             <small>
                                 Connected systems
                             </small>
 
+
                         </span>
+
 
                     </div>
 
 
                 </div>
+
 
             </div>
 
@@ -552,31 +753,68 @@
 
 
         <!-- =====================================================
-             TOOLS LOGOS
+             TOOLS
              ===================================================== -->
 
         <div class="logos">
 
+
             <div class="wrap">
+
 
                 <small>
                     TOOLS & PLATFORMS
                 </small>
 
+
                 <div>
 
-                    <span>GoHighLevel</span>
-                    <span>n8n</span>
-                    <span>Make.com</span>
-                    <span>Vapi</span>
-                    <span>Twilio</span>
-                    <span>Zapier</span>
-                    <span>Meta Ads</span>
-                    <span>REST API</span>
+
+                    <span>
+                        GoHighLevel
+                    </span>
+
+
+                    <span>
+                        n8n
+                    </span>
+
+
+                    <span>
+                        Make.com
+                    </span>
+
+
+                    <span>
+                        Vapi
+                    </span>
+
+
+                    <span>
+                        Twilio
+                    </span>
+
+
+                    <span>
+                        Zapier
+                    </span>
+
+
+                    <span>
+                        Meta Ads
+                    </span>
+
+
+                    <span>
+                        REST API
+                    </span>
+
 
                 </div>
 
+
             </div>
+
 
         </div>
 
@@ -585,16 +823,21 @@
              ABOUT
              ===================================================== -->
 
-        <section class="section dark" id="about">
+        <section
+            class="section dark"
+            id="about">
+
 
             <div class="wrap two">
 
 
                 <div class="section-title reveal">
 
+
                     <label>
                         01 / ABOUT
                     </label>
+
 
                     <h2>
 
@@ -608,16 +851,19 @@
 
                     </h2>
 
+
                 </div>
 
 
                 <div class="copy reveal">
 
+
                     <p class="lead">
 
                         I design and implement systems that help businesses
-                        capture leads, organize conversations, nurture prospects
-                        and move opportunities toward conversion automatically.
+                        capture leads, organize conversations, nurture
+                        prospects and move opportunities toward conversion
+                        automatically.
 
                     </p>
 
@@ -626,36 +872,62 @@
 
                         My core focus is GoHighLevel — funnels, CRM pipelines,
                         complex workflows, calendars, forms, email/SMS nurture,
-                        lead routing and integrations.
-
-                        I also connect GHL with AI and automation platforms
-                        to create end-to-end systems.
+                        lead routing and integrations. I also connect GHL with
+                        AI and automation platforms to create end-to-end systems.
 
                     </p>
 
 
                     <div class="stats">
 
-                        <div>
-                            <b>01</b>
-                            <small>Strategy-first</small>
-                        </div>
 
                         <div>
-                            <b>02</b>
-                            <small>Automation-focused</small>
+
+                            <b>
+                                01
+                            </b>
+
+                            <small>
+                                Strategy-first
+                            </small>
+
                         </div>
 
+
                         <div>
-                            <b>03</b>
-                            <small>Conversion-minded</small>
+
+                            <b>
+                                02
+                            </b>
+
+                            <small>
+                                Automation-focused
+                            </small>
+
                         </div>
+
+
+                        <div>
+
+                            <b>
+                                03
+                            </b>
+
+                            <small>
+                                Conversion-minded
+                            </small>
+
+                        </div>
+
 
                     </div>
 
+
                 </div>
 
+
             </div>
+
 
         </section>
 
@@ -664,16 +936,21 @@
              SERVICES
              ===================================================== -->
 
-        <section class="section" id="services">
+        <section
+            class="section"
+            id="services">
+
 
             <div class="wrap">
 
 
                 <div class="section-title center reveal">
 
+
                     <label>
                         02 / SERVICES
                     </label>
+
 
                     <h2>
 
@@ -687,12 +964,14 @@
 
                     </h2>
 
+
                     <p>
 
                         From acquisition to nurture to conversion,
                         I connect the moving pieces into one system.
 
                     </p>
+
 
                 </div>
 
@@ -737,9 +1016,8 @@
 
                         <p>
 
-                            High-converting landing pages,
-                            lead capture flows, forms, booking journeys
-                            and complete GHL funnels.
+                            High-converting landing pages, lead capture flows,
+                            forms, booking journeys and complete GHL funnels.
 
                         </p>
 
@@ -762,9 +1040,8 @@
 
                         <p>
 
-                            Connect Meta lead generation with instant
-                            GHL follow-up, qualification, routing
-                            and nurture.
+                            Connect Meta lead generation with instant GHL
+                            follow-up, qualification, routing and nurture.
 
                         </p>
 
@@ -812,9 +1089,8 @@
 
                         <p>
 
-                            Behavior-based campaigns and automated
-                            follow-ups that keep leads engaged
-                            and moving through the pipeline.
+                            Behavior-based campaigns and automated follow-ups
+                            that keep leads engaged and moving through the pipeline.
 
                         </p>
 
@@ -837,9 +1113,8 @@
 
                         <p>
 
-                            Connect GHL with CRMs, databases,
-                            external apps and custom systems
-                            using APIs and webhooks.
+                            Connect GHL with CRMs, databases, external apps
+                            and custom systems using APIs and webhooks.
 
                         </p>
 
@@ -862,9 +1137,8 @@
 
                         <p>
 
-                            Multi-step automation for AI workflows,
-                            data processing, notifications
-                            and cross-platform operations.
+                            Multi-step automation for AI workflows, data
+                            processing, notifications and cross-platform operations.
 
                         </p>
 
@@ -887,9 +1161,8 @@
 
                         <p>
 
-                            Lead capture and qualification systems
-                            that reduce manual work and create
-                            cleaner sales opportunities.
+                            Lead capture and qualification systems that reduce
+                            manual work and create cleaner sales opportunities.
 
                         </p>
 
@@ -902,7 +1175,9 @@
 
                 </div>
 
+
             </div>
+
 
         </section>
 
@@ -911,16 +1186,21 @@
              TECH STACK
              ===================================================== -->
 
-        <section class="section dark" id="stack">
+        <section
+            class="section dark"
+            id="stack">
+
 
             <div class="wrap">
 
 
                 <div class="section-title center reveal">
 
+
                     <label>
                         03 / TECH STACK
                     </label>
+
 
                     <h2>
 
@@ -934,6 +1214,7 @@
 
                     </h2>
 
+
                 </div>
 
 
@@ -942,7 +1223,9 @@
 
                     <div class="tool reveal">
 
-                        <b>GHL</b>
+                        <b>
+                            GHL
+                        </b>
 
                         <span>
 
@@ -961,7 +1244,9 @@
 
                     <div class="tool reveal">
 
-                        <b>n8n</b>
+                        <b>
+                            n8n
+                        </b>
 
                         <span>
 
@@ -980,7 +1265,9 @@
 
                     <div class="tool reveal">
 
-                        <b>M</b>
+                        <b>
+                            M
+                        </b>
 
                         <span>
 
@@ -999,7 +1286,9 @@
 
                     <div class="tool reveal">
 
-                        <b>V</b>
+                        <b>
+                            V
+                        </b>
 
                         <span>
 
@@ -1018,7 +1307,9 @@
 
                     <div class="tool reveal">
 
-                        <b>T</b>
+                        <b>
+                            T
+                        </b>
 
                         <span>
 
@@ -1037,7 +1328,9 @@
 
                     <div class="tool reveal">
 
-                        <b>Z</b>
+                        <b>
+                            Z
+                        </b>
 
                         <span>
 
@@ -1056,7 +1349,9 @@
 
                     <div class="tool reveal">
 
-                        <b>API</b>
+                        <b>
+                            API
+                        </b>
 
                         <span>
 
@@ -1075,7 +1370,9 @@
 
                     <div class="tool reveal">
 
-                        <b>WH</b>
+                        <b>
+                            WH
+                        </b>
 
                         <span>
 
@@ -1094,7 +1391,9 @@
 
                 </div>
 
+
             </div>
+
 
         </section>
 
@@ -1103,7 +1402,10 @@
              PROJECTS
              ===================================================== -->
 
-        <section class="section" id="projects">
+        <section
+            class="section"
+            id="projects">
+
 
             <div class="wrap">
 
@@ -1113,9 +1415,11 @@
 
                     <div class="section-title reveal">
 
+
                         <label>
                             04 / PROJECTS
                         </label>
+
 
                         <h2>
 
@@ -1129,6 +1433,7 @@
 
                         </h2>
 
+
                         <p>
 
                             Each project can include an OBS Studio
@@ -1136,32 +1441,55 @@
 
                         </p>
 
+
                     </div>
 
 
-                    <div id="filters" class="filters reveal">
+                    <div
+                        id="filters"
+                        class="filters reveal">
+
 
                         <button
                             class="active"
                             data-filter="all">
+
                             All
+
                         </button>
 
-                        <button data-filter="ghl">
+
+                        <button
+                            data-filter="ghl">
+
                             GHL
+
                         </button>
 
-                        <button data-filter="ai">
+
+                        <button
+                            data-filter="ai">
+
                             AI
+
                         </button>
 
-                        <button data-filter="funnels">
+
+                        <button
+                            data-filter="funnels">
+
                             Funnels
+
                         </button>
 
-                        <button data-filter="integrations">
+
+                        <button
+                            data-filter="integrations">
+
                             Integrations
+
                         </button>
+
 
                     </div>
 
@@ -1169,10 +1497,7 @@
                 </div>
 
 
-                <!-- IMPORTANT:
-                     Changed duplicate ID from projects
-                     to project-grid
-                -->
+                <!-- PROJECT GRID -->
 
                 <div
                     id="project-grid"
@@ -1184,11 +1509,14 @@
                     id="empty"
                     class="empty"
                     hidden>
+
                     No projects found.
+
                 </p>
 
 
             </div>
+
 
         </section>
 
@@ -1197,16 +1525,21 @@
              PROCESS
              ===================================================== -->
 
-        <section class="section dark" id="process">
+        <section
+            class="section dark"
+            id="process">
+
 
             <div class="wrap">
 
 
                 <div class="section-title center reveal">
 
+
                     <label>
                         05 / PROCESS
                     </label>
+
 
                     <h2>
 
@@ -1220,6 +1553,7 @@
 
                     </h2>
 
+
                 </div>
 
 
@@ -1228,7 +1562,9 @@
 
                     <article class="reveal">
 
-                        <b>01</b>
+                        <b>
+                            01
+                        </b>
 
                         <h3>
                             Discover
@@ -1236,9 +1572,8 @@
 
                         <p>
 
-                            Understand the business,
-                            process, bottlenecks
-                            and desired outcome.
+                            Understand the business, process,
+                            bottlenecks and desired outcome.
 
                         </p>
 
@@ -1247,7 +1582,9 @@
 
                     <article class="reveal">
 
-                        <b>02</b>
+                        <b>
+                            02
+                        </b>
 
                         <h3>
                             Design
@@ -1255,9 +1592,8 @@
 
                         <p>
 
-                            Map the customer journey,
-                            funnel, data flow
-                            and automation logic.
+                            Map the customer journey, funnel,
+                            data flow and automation logic.
 
                         </p>
 
@@ -1266,7 +1602,9 @@
 
                     <article class="reveal">
 
-                        <b>03</b>
+                        <b>
+                            03
+                        </b>
 
                         <h3>
                             Build
@@ -1274,9 +1612,8 @@
 
                         <p>
 
-                            Implement GHL workflows,
-                            integrations, AI agents
-                            and supporting systems.
+                            Implement GHL workflows, integrations,
+                            AI agents and supporting systems.
 
                         </p>
 
@@ -1285,7 +1622,9 @@
 
                     <article class="reveal">
 
-                        <b>04</b>
+                        <b>
+                            04
+                        </b>
 
                         <h3>
                             Test & Optimize
@@ -1293,10 +1632,8 @@
 
                         <p>
 
-                            Test edge cases,
-                            improve reliability
-                            and refine the system
-                            for real-world use.
+                            Test edge cases, improve reliability
+                            and refine the system for real-world use.
 
                         </p>
 
@@ -1305,7 +1642,9 @@
 
                 </div>
 
+
             </div>
+
 
         </section>
 
@@ -1314,16 +1653,21 @@
              CONTACT
              ===================================================== -->
 
-        <section class="section contact" id="contact">
+        <section
+            class="section contact"
+            id="contact">
+
 
             <div class="wrap contact-box reveal">
 
 
                 <div>
 
+
                     <label>
                         06 / CONTACT
                     </label>
+
 
                     <h2>
 
@@ -1337,13 +1681,14 @@
 
                     </h2>
 
+
                     <p>
 
-                        Let's turn your manual process
-                        into a clean, scalable
-                        automation system.
+                        Let's turn your manual process into
+                        a clean, scalable automation system.
 
                     </p>
+
 
                 </div>
 
@@ -1353,7 +1698,8 @@
 
                     <!-- EMAIL -->
 
-                    <a href="mailto:habibridoy622@gmail.com">
+                    <a
+                        href="mailto:habibridoy622@gmail.com">
 
                         <small>
                             Email
@@ -1370,7 +1716,8 @@
 
                     <!-- PHONE -->
 
-                    <a href="tel:+8801770721129">
+                    <a
+                        href="tel:+8801770721129">
 
                         <small>
                             Phone
@@ -1407,7 +1754,9 @@
 
                 </div>
 
+
             </div>
+
 
         </section>
 
@@ -1421,18 +1770,22 @@
 
     <footer>
 
+
         <div class="wrap">
 
 
             <div>
 
+
                 <b>
                     Habib Shahriar Ridoy
                 </b>
 
+
                 <small>
                     GHL & Automation Expert
                 </small>
+
 
             </div>
 
@@ -1449,11 +1802,14 @@
 
 
             <a href="#home">
+
                 Back to top ↑
+
             </a>
 
 
         </div>
+
 
     </footer>
 
@@ -1462,7 +1818,9 @@
          PROJECT MODAL
          ===================================================== -->
 
-    <div id="modal" class="modal">
+    <div
+        id="modal"
+        class="modal">
 
 
         <div id="backdrop"></div>
@@ -1514,14 +1872,17 @@
 
         </div>
 
+
     </div>
 
 
-    <!-- JavaScript -->
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
 
-    <script src="projects.js"></script>
+    <script src="projects.js?v=10"></script>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=10"></script>
 
 
 </body>
